@@ -1,0 +1,199 @@
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .strongp-column {
+        width: 50%;
+    }
+    .page-top i { /* icone */
+        font-size: 40px;
+    }
+    .strongpoint-title {
+        font-size: 16px;
+    }
+    .page-top p {
+        font-size: 13px;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .strongp-column {
+        width: 32%;
+    }
+    .page-top i { /* icone */
+        font-size: 50px;
+    }
+    .strongpoint-title {
+        font-size: 18px;
+    }
+    .page-top p {
+        font-size: 14px;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {
+    .strongp-column {
+        width: 33%;
+    }
+    .page-top i { /* icone */
+        font-size: 60px;
+    }
+    .strongpoint-title {
+        font-size: 20px;
+    }
+    .page-top p {
+        font-size: 16px;
+    }
+}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {
+    .strongp-column {
+        width: 20%;
+    }
+    .page-top i { /* icone */
+        font-size: 70px;
+    }
+    .strongpoint-title {
+        font-size: 22px;
+    }
+    .page-top p {
+        font-size: 18px;
+    }
+}
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    #banner-section {
+        min-height: 600px;
+        background-position: center center; /* così si vedrà sempre la parte alta dell'immagine */
+        background-repeat: no-repeat;
+        background-size: 350%;
+        /* height: 450px; */
+    }
+    /* right-section: slogan + carousel + button Spedisci */
+    .right-section {
+        float: none;
+        margin: auto;
+        min-width: 320px;
+    }
+    .r1-slogan {
+        /* color: #D54055; */
+        font-size: 35px;
+        text-align: center;
+    }
+    .r2-carousel {
+        height: 190px;
+        width: 300px;
+        float: none;
+        clear: right;
+        margin: auto; /* questa istruzione è per centrare il div */
+    }
+    .material-icons.md-big {
+        font-size: 40px;
+    }
+    .slide-text {
+        line-height: 190px;
+        height: 190px;
+        width: 300px;
+        padding: 10px 10px;
+        font-size: 30px; /* dimensione carattere del carosello */
+    }
+    .carousel-dot { /* barrette rettangolari */
+        height: 8px;
+        width: 94px;
+        margin: 0px 0px; /* impostati solo 2 margini: top/bottom, e left/right */
+    }
+    .r3-div-container-big-button {
+        position: relative;
+        top: 10vh;
+        /* width: 400px; */
+    }
+    .r3-big-button {
+        width: 220px;
+        font-size: 35px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+/* 2) Small/Medium devices (Small Tablets)  --  x >= 481  */
+@media (min-width:481px) {
+    #banner-section {
+        min-height: 700px;
+    }
+    .right-section {
+        float: right;
+        position: relative;
+        top: 5vh;
+        right: 5vw;
+        min-width: 700px;
+    }
+    .r1-slogan {
+        text-align: right;
+        /* color: #ff7424; */
+    }
+    .r2-carousel {
+        position: relative;
+        float: right;
+        top: 1vh;
+        height: 250px;
+        width: 400px;
+        font-size: 18px;
+    }
+    .slide-text {
+        font-size: 40px; /* dimensione carattere del carosello */
+    }
+    .r3-div-container-big-button {
+        position: relative;
+        clear: right; /* serve nel caso r2 usi:  float: right !!! */
+        float: right; /* per allinearlo a dx */
+        top: 5vh;
+        width: 400px;
+    }
+    .r3-big-button {
+        width: 255px;
+        font-size: 40px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+/* 3) Medium devices (Tablets and medium pc screen)  --  x >= 769  */
+@media (min-width:769px) {
+    .r1-slogan {
+        /* color: #383fd5; */
+        font-size: 44px;
+    }
+    .slide-text {
+        /* font-size: 50px; /* dimensione carattere del carosello */
+    }
+}
+
+/* 4) Large devices (Large pc screen)  --  x >= 1025  */
+@media (min-width:1025px) {
+    .r1-slogan {
+        /* color: #4fd533; */
+        font-size: 50px;
+    }
+}
+
+/* 5) Large devices (Large pc screen)  --  x >= 1250  */
+@media (min-width:1250px) {
+    .right-section {
+        right: 15vw;
+    }
+    .r1-slogan {
+        /* color: #4fd533; */
+    }
+}
+
+
+/* ** Ridefinizione di elementi per Fasce Particolari ** */
+
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .r1-slogan {
+        /* color: #4fd533; */
+        font-size: 50px;
+    }
+    #br1 {
+        display:inline; /* "a capo" dopo la parola "spedisci" nello slogan */
+    }
+}

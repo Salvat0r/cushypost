@@ -1,0 +1,62 @@
+.partner-section {
+    width: 50%;
+    float: left;
+    border: 0px solid #ff7424;
+}
+.partner-logo {
+    margin-right: 3%;
+    margin-bottom: 4%;
+    width: 45%; /* 30% */
+    float: left;
+    opacity: 0.9;
+}
+.partner-logo img {
+    /* height: 100%; */
+}
+.margin-top-little {
+    margin-top: 10px;
+}
+
+.footer a.text-orange {
+    color: #ff7424;
+}
+.footer a {
+    color: #888;
+}
+.footer a:hover,
+.footer a:focus {
+    color: #ff7424;
+}
+
+.subfooter a.text-orange {
+    color: #ff7424;
+}
+.subfooter a {
+    color: #aebcb9;
+}
+.subfooter a:hover,
+.subfooter a:focus {
+    background-color: transparent;
+    color: #ff7424;
+}
+.margin-right-little {
+    margin-right: 12px;
+}
+
+
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .partner-section {
+        width: 90%;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .partner-section {
+        width: 90%;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {}

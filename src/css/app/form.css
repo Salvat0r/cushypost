@@ -1,0 +1,139 @@
+/**
+ * Form customization
+ */
+.form-control {
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    padding-right: 0 !important;
+}
+
+.form-group {
+    display: inline-block;
+    width: 100%;
+}
+
+/**
+ * See https://www.tjvantoll.com/2012/07/15/native-html5-number-picker-vs-jquery-uis-spinner-which-to-use/
+ */
+
+.select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font:normal 11px/22px Arial, Sans-Serif;
+    color:black;
+    border:1px solid #ccc;
+    min-height: 40px;
+    min-width: 100px;
+}
+
+/* This is for ListControl */
+.styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:0 10px;
+    font-weight:bold;
+}
+.styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border: 5px solid transparent;
+    border-color: black transparent transparent transparent;
+    position:absolute;
+    top:20px;
+    right:6px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.underline {
+    border-bottom: 1px dashed;
+    font-size: 13px;
+}
+
+.btn-radio {
+    margin: 0;
+    min-width: 40px;
+    max-width: 180px;
+}
+
+.btn-group {
+    display: block;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
+.dropdown-toggle.flags {
+    min-width: 20px;
+    margin: 0;
+    width: 100%;
+}
+.dropdown-menu.flags {
+    max-height: 232px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 5;
+}
+.dropdown-menu.flags a {
+    color: #000000;
+    background-color: #cacaca;
+    font-weight: bold;
+}
+.dropdown-menu.flags a:visited {
+    background-color: #cacaca;
+}
+.dropdown-menu.flags a:hover {
+    color: #000000 !important;
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+    background-color: #cacaca;
+}
+.dropdown-menu.flags a:active {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+.dropdown-selected {
+    width: calc(100% - 56px);
+    overflow: hidden;
+    text-overflow: clip;
+}
+.dropdown-open {
+    margin-top: 3px;
+}
+
+.btn-neutral:hover,
+.btn-neutral:focus,
+.btn-neutral:active,
+.btn-neutral.active,
+.open
+.dropdown-toggle.btn-neutral {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+
+.btn-neutral {
+    color: #555 !important;
+    background-color: #cacaca;
+    border-color: #acacac;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.btn-inline {
+    margin: 0;
+    line-height: 0.428571 !important;
+}

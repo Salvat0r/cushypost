@@ -1,0 +1,19 @@
+/**
+ * jquery autocomplete customization
+ */
+.easy-autocomplete.eac-square input {
+    height: 33px;
+}
+.easy-autocomplete-container ul {
+    z-index: 5;
+    max-height: 232px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.easy-autocomplete-container ul .strong {
+    text-decoration: underline;
+}
+
+.easy-autocomplete input.with-flag {
+    padding-left: 34px !important;
+}

@@ -1,0 +1,35 @@
+/* === Responsiveness - resizing for different devices === */
+
+/* # Ogni fascia definita  */
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {}
+
+/* # Fasce definite così:
+     cellulari (< 481), più grandi dei cellulari (> 481) , eventuali ridefinizioni per > 769 , eventuali ridefinizioni per > 1025  */
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {}
+/* 2) Small/Medium devices (Small Tablets)  --  x >= 481 */
+@media (min-width:481px) {}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  x >= 769 */
+@media (min-width:769px) {}
+/* 4) Large devices (Large Pc screen)  --  x >= 1025 */
+@media (min-width:1025px) {}
+
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width:480px) {}
+/* Small devices (tablets, phones less than 767px) */
+@media (min-width:481px) and (max-width:767px) {}
+/* Medium devices (tablets landscape to portrait) */
+@media (min-width:768px) and (max-width:991px) {}
+/* Medium desktop devices and tablets */
+@media (min-width:992px) and (max-width:1199px) {}
+/* Large devices (Large desktops 1200px and up) */
+@media (min-width:1200px) {}
+

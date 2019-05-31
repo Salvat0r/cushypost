@@ -1,0 +1,44 @@
+body {
+    color: unset;
+}
+
+#wizard {
+    display: none; /* entrando nella Home il wizard non si deve vedere */
+}
+
+div#wizard fieldset {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+}
+div#wizard fieldset legend {
+    float: left;
+    width: 100%;
+    border: unset;
+    background-color: #f1f1f1;
+}
+di#wizard .tab-content:after {
+    background-color: unset;
+}
+
+label.btn {
+    width: 100%;
+}
+.btn-lg input[type="radio"],
+.btn-lg input[type="radio"],
+.btn-lg input[type="checkbox"],
+.btn-lg input[type="checkbox"] {
+    position: relative;
+    margin: 22px 11px 0 18px;
+}
+.btn-lg span {
+    margin: 15px;
+}
+
+.pill {
+    border-radius: 50%;
+    background-color: #ff7424;
+    width: 16px;
+    text-align: center;
+    color: white;
+    margin: 4px;
+}

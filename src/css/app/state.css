@@ -1,0 +1,15 @@
+.ui-state-error {
+    font-size: 13px;
+    margin: 1px;
+}
+.ui-icon {
+    margin-bottom: -1px;
+    margin-left: 4px;
+}
+.ui-input-error {
+    border: solid 1px #ffb73d !important;
+}
+.underline-error {
+    border: solid #ff7424 2px;
+    transition: all 2s;
+}

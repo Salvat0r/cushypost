@@ -1,0 +1,196 @@
+#wizard {
+    display: none; /* entrando nella Home il wizard non si deve vedere */
+}
+
+.container.main-wizard {
+    padding: 0 !important;
+}
+.container.wizard {
+    padding: 0 !important;
+    width: 100%;
+}
+.container.wizard > .nav-title {
+    color: #ff7424;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar.wizard {
+    margin-bottom: 0;
+    min-height: 20px;
+    border: none;
+}
+.tab-content.wizard {
+    padding: 0 !important;
+}
+.tab-content.wizard:after {
+    width: 0;
+}
+form > .row {
+    margin: 0;
+}
+.sideways > ul {
+
+}
+.sideways > li > a,
+.sideways > li > a:hover,
+.sideways > li > a:focus {
+    min-height: 41px;
+}
+.wizard .nav-pills > li {
+    display: flex;
+}
+.wizard .nav-pills > li.empty {
+    flex-grow: 100;
+    float: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+.wizard .nav-pills > li > a {
+    border-bottom: 1px solid #f3f3f3;
+}
+.wizard .nav-pills > li + li {
+    margin-left: 0;
+}
+.wizard .nav-pills > li.active > a {
+    border-bottom: none;
+}
+.wizard .nav-pills > li > a:hover {
+    border-bottom: none;
+}
+
+.wizard .nav-pills > li > a {
+    padding: 10px 4px;
+}
+.wizard .navbar-inner span.title {
+    margin-left: 5px;
+}
+.wizard .navbar-inner i.fa {
+    margin-left: 5px;
+    color: #ddd;
+}
+.wizard .navbar-inner .pill,
+.wizard .nav-tabs .pill {
+    border-radius: 50%;
+    background-color: #ddd;
+    width: 20px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.wizard .navbar-inner .pill.selected,
+.wizard .nav-tabs .active .pill {
+    background-color: #ff3a24;
+}
+.wizard .nav-tabs .command .pill {
+    background-color: #ff7424;
+}
+.wizard .navbar-inner .pill.passed {
+    background-color: #ff7424;
+}
+
+/* Vertical tabs: https://jsfiddle.net/GetUIKit/b3nhjvot/ */
+.tabs-left, .tabs-right {
+    border-bottom: none;
+    padding-top: 2px;
+}
+.tabs-left {
+    border-right: 1px solid #ddd;
+}
+.tabs-right {
+    border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+    float: none;
+    margin-bottom: 2px;
+}
+.tabs-left>li {
+    margin-right: -1px;
+}
+.tabs-right>li {
+    margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+}
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+    border-bottom: 1px solid #ddd;
+    border-left-color: transparent;
+}
+.tabs-left>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display:block;
+}
+.tabs-right>li>a {
+    border-radius: 0 4px 4px 0;
+    margin-right: 0;
+}
+
+/* Accordion customization */
+.panel-heading a {
+    transition: transform 2s;
+}
+.panel-heading a:before {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling FontAwesome */
+    content: "\f078";    /* fa-chevron-down */
+    float: left;
+    width: 25px;
+}
+.panel-heading a:after {
+    /* overwrite default behavior */
+    content: inherit !important;
+}
+.panel-heading a.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\f054";    /* fa-chevron-right */
+}
+.panel-heading a.collapsed:after {
+    /* overwrite default behavior */
+    content: inherit !important;
+}
+.panel-body i {
+    width: initial !important;
+}
+
+@media (max-width: 991px) {
+    .lighten {
+        border-bottom: 1px solid #ff7424;
+        text-align: left;
+    }
+    .text-aligned {
+        margin-top: 12px;
+    }
+}
+@media (min-width: 992px) {
+    .lighten {
+        text-align: right;
+    }
+    .text-aligned {
+        margin-top: 12px;
+        border-left: 1px solid #ff7424;
+    }
+}
+
+@media (max-width: 991px) {
+    .pr-min {
+        padding-right: 10px;
+    }
+}
+@media (min-width:992px) and (max-width: 1199px) {
+    .pr-min {
+        padding-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .pr-min {
+        padding-right: 10px;
+    }
+}
+
+

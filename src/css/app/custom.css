@@ -1,0 +1,14 @@
+/**
+ * Common usage
+ */
+
+body {
+    font-family: 'Open Sans', "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}

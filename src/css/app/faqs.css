@@ -1,0 +1,106 @@
+.separator.faq:after {
+    width: 80px;
+    height: 5px;
+    background: #888;
+}
+.faq-section {
+    background-color: #ffe0b2; /* colore per il Background della sezione  - #e1bee7 = lilla chiaro */
+    margin-bottom: 40px;
+}
+.faq-icon {
+    background-color: #ff7424 ; /* #ba68c8 = viola chiaro */
+    color: #ffffff;
+}
+.faq-div {
+    border: 0px solid transparent; /*#54bcff; /* nb: senza questo bordo, l'allineamento del link "leggi" non va bene! */ /* colore azzurro: #54bcff */
+}
+.faq-div a {
+    color: #ff7424;
+    text-decoration: none;
+}
+.faq-body { /* corpo della faq, compreso il titolo */
+    min-height: 180px;
+    border: 1px solid transparent;
+}
+.faq-body p {
+    color: #6b686b;
+    margin-bottom: 30px;
+    border: 0px solid #ff7424;
+}
+.bottom-with-margin {
+    position: absolute;
+    bottom: 10px;
+    border: 1px solid transparent;
+}
+/* colore dell'icona, quando si va col mouse sopra Tutta la Sezione della Faq! */
+.box-style-2:hover .faq-icon {
+    background-color: #fff;
+    color: #ff7424;
+    border: 1px solid #ff7424;
+}
+/* colore del link (parola "leggi"), quando si va col mouse sopra Tutta la Sezione della Faq! */
+.box-style-2:hover .link {
+    /* opacity: 0.7; */
+    color: #fff;
+}
+.box-style-2 .body {
+    margin-left: 80px; /* default 80 */
+}
+
+
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 40px;
+        height: 40px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+    .faq-body { /* corpo della faq, compreso il titolo */
+        min-height: 120px;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 40px;
+        height: 40px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+    .faq-body { /* corpo della faq, compreso il titolo */
+        min-height: 120px;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {}

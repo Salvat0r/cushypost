@@ -1,0 +1,568 @@
+/*
+Theme Name:iDea - Clean & Powerful Bootstrap Theme
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version: 1.3
+Created:September 2014
+License URI:http://support.wrapbootstrap.com/
+File Description:Red Skin
+*/
+
+
+/* fonts installed - Dani */
+@font-face { font-family: proxima-nova; src: url('/fonts/Proxima Nova Semibold.otf'); }
+@font-face { font-family: montserrat; src: url('/fonts/Montserrat-Bold.otf'); }
+@font-face { font-family: Gabriola; src: url('/fonts/Gabriola.ttf'); }
+
+
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+
+/* 
+    Cambio dei colori:
+   
+    #e84c3d rosso chiaro --cambiato con--> #ff7424 arancio
+    #cd3c2e rosso scuro  --cambiato con--> #ff3a24 rosso
+                         --non usato   --> #ff2466 fucsia 
+*/
+a, .text-default {
+	color: #ff7424;
+}
+a:hover,
+a:focus {
+	/* color: #ff3a24; */
+	/* color: #ff7424;
+	opacity: 0.8; */
+}
+mark,
+.mark {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #ff7424;
+	background-color: #ff7424;
+	color: #fff;
+}
+.table-bordered {
+	border-color: #ff7424;
+}
+
+/* 2 Layout
+----------------------------------------------------------------------------- */
+.default-bg {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+
+/* Backgrounds
+---------------------------------- */
+.default-translucent-bg:after {
+	background-color: rgba(232,76,61,0.7);
+}
+
+/* 3 Pages
+----------------------------------------------------------------------------- */
+.blogpost .post-info {
+	background-color: #ff7424;
+	color: #fff;
+}
+.blogpost .side .social-links li a {
+	background-color: transparent;
+	border-color: transparent;
+	color: #ff7424;
+}
+.blogpost ul.links li a:hover {
+	color: #ff7424;
+}
+
+/* timeline layout */
+.timeline-date-label {
+	color: #ff7424;
+}
+@media (min-width:768px) {
+	.timeline .timeline-item:before {
+		background-color: #fff;
+		border: 1px solid #ff7424;
+	}
+}
+
+/* 4 Template Components
+----------------------------------------------------------------------------- */
+/* Buttons
+---------------------------------- */
+/* Gray Buttons */
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Light Gray Buttons */
+.btn-light-gray:hover,
+.btn-light-gray:focus,
+.btn-light-gray:active,
+.btn-light-gray.active,
+.open .dropdown-toggle.btn-light-gray {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Default Buttons */
+.btn-default {
+	background-color: #ff7424;
+	color: #fff !important;
+	/* border-color: #ff3a24; */
+}
+
+/* pulsante quando evidenziato! */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default:active:hover,
+.open .dropdown-toggle.btn-default {
+	color: #fff !important;
+	background-color: #f57121; /* arancione più scuro dello standard */
+	border-color: #f57121;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default {
+	background-color: #ff3a24;
+	border-color: #ff3a24;
+}
+
+/* Button with transparent bg
+---------------------------------- */
+.btn-white {
+	background-color: transparent;
+	color: #ff3a24;
+	border: 1px solid #ff7424;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+	color: #fff;
+	background-color: #ff3a24;
+	border-color: #ff3a24;
+}
+
+/* Button background transitions
+---------------------------------- */
+.hvr-sweep-to-right:before,
+.hvr-sweep-to-left:before,
+.hvr-sweep-to-bottom:before,
+.hvr-sweep-to-top:before,
+.hvr-bounce-to-right:before,
+.hvr-bounce-to-left:before,
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before,
+.hvr-radial-out:before,
+.hvr-rectangle-out:before,
+.hvr-shutter-out-horizontal:before,
+.hvr-shutter-out-vertical:before {
+	background: #ff3a24;
+}
+
+/* Forms
+---------------------------------- */
+.default-bg .form-control {
+	border-color: #ff7424;
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	color: #ffffff;
+}
+.default-bg .form-control:focus {
+	border-color: #ff7424;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.default-bg .input-group-addon {
+	background-color: #ff3a24;
+	border-color: #ff7424;
+	color: #fff;
+}
+.dropdown .active>a>.badge,
+.dropdown a:hover .badge,
+.dropdown .open > a > .badge {
+	border-color: #ff7424;
+}
+
+/* Pager
+---------------------------------- */
+ul.pagination li > a:hover {
+	background-color: transparent;
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+ul.pagination li.active a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Tabs
+---------------------------------- */
+.nav-tabs > li.active > a:after {
+	background-color: #ff7424;
+}
+.tab-content:after {
+	background-color: #ff7424;
+}
+@media (max-width:480px) {
+	.nav-tabs > li > a:hover:after {
+		background-color: #ff7424;
+	}
+}
+
+/* Horizontal tabs version 2 */
+.tabs-style-2 .nav-tabs {
+	border-bottom: 1px solid #ff7424;
+}
+.tabs-style-2 .nav-tabs > li.active > a,
+.tabs-style-2 .nav-tabs > li.active > a:hover,
+.tabs-style-2 .nav-tabs > li.active > a:focus,
+.tabs-style-2 .nav-tabs > li > a:hover {
+	border: 1px solid #ff7424;
+	background-color: #ff7424;
+	color: #fff;
+}
+
+/* vertical tabs */
+.vertical .nav-tabs > li > a:hover:after {
+	background-color: #ff7424;
+}
+
+/* Nav pills
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+	border: 1px solid #f3f3f3;
+	color: #ff7424;
+	background-color: #fafafa;
+}
+.nav-pills > li.active > a:after {
+	color: #ff7424;
+}
+.nav-pills > li.active > a:hover:after,
+.nav-pills > li.active > a:focus:after,
+.nav-pills > li > a:hover:after,
+.nav-pills > li > a:focus:after {
+	color: #ff7424;
+}
+.light .footer-content .nav-pills > li.active > a:hover,
+.light .footer-content .nav-pills > li > a:hover {
+	color: #ff3a24;
+}
+.nav-pills > .active > a > .badge {
+	color: #ff7424;
+	background-color: #fff;
+	border-color: #ff7424;	
+}
+
+/* Collapse
+---------------------------------- */
+.panel-heading a {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.panel-heading a:hover,
+.panel-transparent .panel-heading a:hover {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+
+/* Progress bars
+---------------------------------- */
+.progress-bar-default {
+	background-color: #ff7424;
+}
+
+/* Modals
+---------------------------------- */
+.modal-content .modal-header {
+	background-color: #ff7424;
+}
+
+/* Images and Images overlay
+---------------------------------- */
+.overlay a {
+	color: #ff7424;
+	background-color: #ffffff;
+}
+.overlay-links a + a {
+	color: #ffffff;
+	background-color: #ff7424;
+}
+a.overlay i {
+	color: #ff7424;
+}
+
+/* 5 Navigations
+----------------------------------------------------------------------------- */
+/* first level active menu items on hover/focus */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #ff7424;
+	background-color: transparent;
+}
+
+.main-navigation .navbar-nav > .open > a, 
+.main-navigation .navbar-nav > .open > a:hover, 
+.main-navigation .navbar-nav > .open > a:focus { 
+	color: #666666; 
+	background-color: #fafafa; 
+}
+
+/* second level menu items on focus/hover and when opened */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu .menu > .active > a,
+.dropdown-menu .menu > .active > a:hover,
+.dropdown-menu .menu > .active > a:focus {
+	background-color: #ffffff;
+	color: #ff7424;
+	border-color: #f1f1f1;
+}
+#offcanvas .nav .open > a,
+#offcanvas .nav .open > a:hover,
+#offcanvas .nav .open > a:focus,
+#offcanvas .nav > li > a:hover, 
+#offcanvas .nav > li > a:focus,
+#offcanvas .navbar-nav > li.active > a {
+	color: #ff7424;
+	background-color: #ffffff;
+}
+
+/* mega menu menu items on focus/hover and when opened */
+.mega-menu .menu > li > a:hover,
+.mega-menu .menu > li > a:focus {
+	background-color: #ffffff;
+	color: #ff7424;
+	border-color: #f1f1f1;
+}
+
+/* arrows for parent menu items */
+.navbar-default .navbar-nav > .active.dropdown > a:before {
+	color: #ff7424;
+}
+.navbar-default .navbar-nav > .dropdown.open > a:before { 
+	color: #e5e5e5; 
+}
+.dropdown .dropdown.open>a:before,
+.transparent.header:not(.dark) .dropdown .dropdown.open>a:before {
+	color: #ff7424;
+}
+
+/* mobile menu toggle button on hover/focus */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fafafa;
+	border-color: #ff7424;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #ff7424;
+}
+@media (max-width:767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { 
+		color: #ff7424; 
+		background-color: transparent; 
+	}
+	
+	/* first level items hover and focus states */
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #ff7424;
+		background-color: #fff;
+	}
+	
+	/* second level items on hover/focus */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ff7424;
+	}
+}
+
+/* Subfooter navigation
+---------------------------------- */
+.subfooter .navbar-default .nav > li > a:hover,
+.subfooter .navbar-default .nav > .active > a:hover,
+.subfooter .navbar-default .nav > .active > a:focus {
+	background-color: transparent;
+	color: #ff7424;
+}
+
+/* 6 Blocks/Widgets
+----------------------------------------------------------------------------- */
+/* Boxes
+---------------------------------- */
+.box.gray-bg:hover {
+	color: #ff7424;
+}
+.box.default-bg:hover {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box.default-bg:hover * {
+	color: #ff7424;
+}
+.box-style-1:not(.team-member):hover i {
+	color: #ff7424;
+}
+.box-style-1.default-bg:hover i, 
+.box-style-1.dark-bg:hover i {
+	color: inherit;
+}
+.box-style-2:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box-style-2:hover .default-bg * {
+	color: #ff7424;
+}
+.box-style-2:hover .white-bg * {
+	color: #ff7424;
+}
+.box-style-3:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box-style-3:hover .default-bg * {
+	color: #ff7424;
+}
+.box-style-3:hover .white-bg * {
+	color: #ff7424;
+}
+
+/* Tags cloud block
+---------------------------------- */
+.tag a:hover {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Social icons block
+---------------------------------- */
+.social-links li a {
+	background: #ff7424;
+	border: 1px solid #ff7424;
+	color: #fff;
+}
+.social-links li a:hover {
+	background-color: transparent;
+	border-color: #ff3a24;
+	color: #ff3a24;
+}
+.social-links .dropdown.open>button>i:before {
+	content: "\f00d";
+	color: #ff7424;
+}
+.header-top .social-links li a:hover {
+	color: #ff3a24;
+}
+
+/* search and login
+---------------------------------- */
+.header-top-dropdown .dropdown.open>button,
+.header-top-dropdown .dropdown>button:hover {
+
+	color: #ff7424;
+}
+
+/* Pricing tables
+---------------------------------- */
+.plan .popover-title {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.gray .plan .header h3 {
+	color: #ff7424;
+}
+.white .plan .header {
+	color: #fff;
+	background: #ff7424;
+}
+.stripped .header {
+	background: #ff7424;
+	-webkit-box-shadow: 0px 0px 60px #ff3a24 inset;
+	-moz-box-shadow: 0px 0px 60px #ff3a24 inset;
+	box-shadow: 0px 0px 60px #ff3a24 inset;
+	color: #fff;
+}
+
+/* 7 Main Slideshow
+----------------------------------------------------------------------------- */
+/* Slider Revolution captions */
+.default_bg {
+	background-color: #ff7424;
+	color: #fff;
+}
+
+/* Revolution Nav Controls */
+.tparrows.round:hover {
+	color: #ffffff;
+	background-color: #ff7424;
+}
+.tp-bullets.simplebullets.round .bullet:hover,
+.tp-bullets.simplebullets.round .bullet.selected {
+	background-color: #ff7424;
+}
+.tp-bannertimer {
+	background-color: rgba(232,76,61,0.7);
+}
+
+/* 8 Owl carousel
+----------------------------------------------------------------------------- */
+.owl-prev {
+	background-color: #ff7424;
+	color: #f1f1f1;
+}
+.owl-next {
+	background-color: #f1f1f1;
+	color: #ff7424;
+}
+.content-slider-with-controls .owl-buttons div,
+.content-slider-with-controls-autoplay .owl-buttons div {
+	background-color: #ff7424;
+	color: #f1f1f1;
+}
+.content-slider-with-controls .owl-prev:hover,
+.content-slider-with-controls .owl-next:hover,
+.content-slider-with-controls-autoplay .owl-prev:hover,
+.content-slider-with-controls-autoplay .owl-next:hover {
+	background-color: #f1f1f1;
+	color: #ff7424;
+}
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+	background: #ff7424;
+}

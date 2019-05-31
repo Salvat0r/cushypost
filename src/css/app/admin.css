@@ -1,0 +1,148 @@
+/* === style for the admin page === */
+
+.dense {
+    font-size: 13px !important;
+    height: 30px;
+}
+.fa-dense {
+    line-height: 33px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+.tab-content.dense {
+    /* width: 100%; - la larghezza della tabella coi dati: se non è impostata la larghezza si prende lo spazio che serve x visualizzare i dati! */
+}
+#dashboard.container  {
+    width: 95%;
+}
+.vertical .nav-tabs > li a {
+    padding: 15px 15px;
+}
+#admin-page.modal-open .page-wrapper {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(0px); /* blur della pagina quando è attiva la modale */
+}
+.modal-lg {
+    width: 1000px; /* larghezza modale */
+}
+.modal-dialog {
+    margin: 30vh auto; /* posizionamento modale */
+}
+.space-for-fields {
+    padding: 20px;
+}
+
+#admin-page .pagination-div {
+    margin: 20px 0 40px;
+}
+#admin-page .pagination-div ul.pagination {
+     margin: 0;
+}
+/* select per i "risultati per pagina" */
+#admin-page .pagination-div select.ris-per-page {
+    margin: 0 10px 0 100px;
+    border-color: #acacac;
+    border-radius: 0px;
+    border: 1px solid #e8e8e8;
+    line-height: 1;
+    height: 35px;
+    color: #666666;
+    position: relative;
+    top: -11px;
+    display: inline-block;
+    width: 70px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* etichetta "risultati er pagina" */
+#admin-page .pagination-div span.ris-per-page {
+    position: relative;
+    top: -8px;
+}
+
+/* pulsante di export */
+#admin-page .pagination-div span.btn-group {
+    margin: 0 10px 0 200px;
+    display: inline-block;
+    position: relative;
+    top: -11px;
+}
+#admin-page .pagination-div span .btn {
+    margin: 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #999;
+    border-color: #999;
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus {
+    background-color: #888;
+    border-color: #888;
+}
+.dropdown-menu {
+    min-width: 180px;
+}
+.dropdown-menu > li > a {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+
+/* pulsanti paginazione */
+ul.pagination li > a,
+.pagination > li:first-child > a,
+.pagination > li:last-child > a
+{
+    border: 1px solid #e8e8e8;
+}
+
+.pagination > .disabled > a {
+    color: #aaa;
+    background-color: #f1f1f1;
+    border-color: #e8e8e8;
+}
+
+
+#tabs-menu {
+    max-width: 12vw; /* larghezza del menù a sx coi vari tab */
+}
+
+#shipments-table {
+    max-width: 84vw; /* larghezza della tabella delle spedizioni */
+    overflow-x: scroll;
+    display: inline-block;
+    border-color: transparent;
+}
+
+
+a i.fa-caret-right,
+a i.fa-caret-down,
+a i.fa-edit {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

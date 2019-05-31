@@ -1,0 +1,18 @@
+.strongp-column {
+    float:left;
+    /* height: 400px; /* altezza fissa: utile per allineare bene gli strongpoints */
+    border: 0px solid #ba68c8;
+}
+.page-top i { /* icone */
+    color: #ff7424; /* arancio */
+}
+.strongpoint-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+/* paragrafi con le descrizioni degli strongpoint */
+.page-top p {
+    color: #888;
+}

@@ -1,0 +1,1868 @@
+/* === style for the admin page === */
+
+.dense {
+    font-size: 13px !important;
+    height: 30px;
+}
+.fa-dense {
+    line-height: 33px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+.tab-content.dense {
+    /* width: 100%; - la larghezza della tabella coi dati: se non è impostata la larghezza si prende lo spazio che serve x visualizzare i dati! */
+}
+#dashboard.container  {
+    width: 95%;
+}
+.vertical .nav-tabs > li a {
+    padding: 15px 15px;
+}
+#admin-page.modal-open .page-wrapper {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(0px); /* blur della pagina quando è attiva la modale */
+}
+.modal-lg {
+    width: 1000px; /* larghezza modale */
+}
+.modal-dialog {
+    margin: 30vh auto; /* posizionamento modale */
+}
+.space-for-fields {
+    padding: 20px;
+}
+
+#admin-page .pagination-div {
+    margin: 20px 0 40px;
+}
+#admin-page .pagination-div ul.pagination {
+     margin: 0;
+}
+/* select per i "risultati per pagina" */
+#admin-page .pagination-div select.ris-per-page {
+    margin: 0 10px 0 100px;
+    border-color: #acacac;
+    border-radius: 0px;
+    border: 1px solid #e8e8e8;
+    line-height: 1;
+    height: 35px;
+    color: #666666;
+    position: relative;
+    top: -11px;
+    display: inline-block;
+    width: 70px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* etichetta "risultati er pagina" */
+#admin-page .pagination-div span.ris-per-page {
+    position: relative;
+    top: -8px;
+}
+
+/* pulsante di export */
+#admin-page .pagination-div span.btn-group {
+    margin: 0 10px 0 200px;
+    display: inline-block;
+    position: relative;
+    top: -11px;
+}
+#admin-page .pagination-div span .btn {
+    margin: 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #999;
+    border-color: #999;
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus {
+    background-color: #888;
+    border-color: #888;
+}
+.dropdown-menu {
+    min-width: 180px;
+}
+.dropdown-menu > li > a {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+
+/* pulsanti paginazione */
+ul.pagination li > a,
+.pagination > li:first-child > a,
+.pagination > li:last-child > a
+{
+    border: 1px solid #e8e8e8;
+}
+
+.pagination > .disabled > a {
+    color: #aaa;
+    background-color: #f1f1f1;
+    border-color: #e8e8e8;
+}
+
+
+#tabs-menu {
+    max-width: 12vw; /* larghezza del menù a sx coi vari tab */
+}
+
+#shipments-table {
+    max-width: 84vw; /* larghezza della tabella delle spedizioni */
+    overflow-x: scroll;
+    display: inline-block;
+    border-color: transparent;
+}
+
+
+a i.fa-caret-right,
+a i.fa-caret-down,
+a i.fa-edit {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/**
+ * jquery autocomplete customization
+ */
+.easy-autocomplete.eac-square input {
+    height: 33px;
+}
+.easy-autocomplete-container ul {
+    z-index: 5;
+    max-height: 232px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.easy-autocomplete-container ul .strong {
+    text-decoration: underline;
+}
+
+.easy-autocomplete input.with-flag {
+    padding-left: 34px !important;
+}
+ 
+/* Slideshow container */
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* background-color: #bb459d; */
+}
+.carousel-slide {display:none}
+/*
+.carousel-container img {
+    height: 220px;
+    width: 400px;
+}
+*/
+/* Caption text */
+.slide-text {
+    line-height: 220px;
+    height: 220px;
+    width: 400px;
+    padding: 12px 12px;
+    font-family: "Open Sans", Gabriola;
+    /* font-weight: bold; */
+    text-align: center;
+    /* color: #248; */
+}
+.slide-text p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+.material-icons.md-big { font-size: 55px; }
+.glyphicon-size { font-size: 28px; }
+
+.align-center {
+    text-align: center;
+}
+/* The dots/bullets/indicators */
+.carousel-dot { /* barrette rettangolari */
+    height: 8px;
+    width: 125px;
+    margin: 0px 0px; /* impostati solo 2 margini: top/bottom, e left/right */
+    background-color: #ff7424;
+    opacity: 0.3;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-dot {
+    background-color: #ff7424;
+    opacity: 0.8;
+}
+/* Fading animation */
+.slide-eff {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.6s;
+    animation-name: fade;
+    animation-duration: 0.6s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+ 
+.background-nocolor {
+    background-color: #fff;
+}
+ 
+#chi-siamo p {
+    font-size: 15px;
+}
+#chi-siamo li {
+    font-size: 15px;
+}
+ 
+/*
+Theme Name:iDea - Clean & Powerful Bootstrap Theme
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Author e-mail:htmlcoder.me@gmail.com
+Version: 1.3
+Created:September 2014
+License URI:http://support.wrapbootstrap.com/
+File Description:Red Skin
+*/
+
+
+/* fonts installed - Dani */
+@font-face { font-family: proxima-nova; src: url('/fonts/Proxima Nova Semibold.otf'); }
+@font-face { font-family: montserrat; src: url('/fonts/Montserrat-Bold.otf'); }
+@font-face { font-family: Gabriola; src: url('/fonts/Gabriola.ttf'); }
+
+
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+
+/* 
+    Cambio dei colori:
+   
+    #e84c3d rosso chiaro --cambiato con--> #ff7424 arancio
+    #cd3c2e rosso scuro  --cambiato con--> #ff3a24 rosso
+                         --non usato   --> #ff2466 fucsia 
+*/
+a, .text-default {
+	color: #ff7424;
+}
+a:hover,
+a:focus {
+	/* color: #ff3a24; */
+	/* color: #ff7424;
+	opacity: 0.8; */
+}
+mark,
+.mark {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #ff7424;
+	background-color: #ff7424;
+	color: #fff;
+}
+.table-bordered {
+	border-color: #ff7424;
+}
+
+/* 2 Layout
+----------------------------------------------------------------------------- */
+.default-bg {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+
+/* Backgrounds
+---------------------------------- */
+.default-translucent-bg:after {
+	background-color: rgba(232,76,61,0.7);
+}
+
+/* 3 Pages
+----------------------------------------------------------------------------- */
+.blogpost .post-info {
+	background-color: #ff7424;
+	color: #fff;
+}
+.blogpost .side .social-links li a {
+	background-color: transparent;
+	border-color: transparent;
+	color: #ff7424;
+}
+.blogpost ul.links li a:hover {
+	color: #ff7424;
+}
+
+/* timeline layout */
+.timeline-date-label {
+	color: #ff7424;
+}
+@media (min-width:768px) {
+	.timeline .timeline-item:before {
+		background-color: #fff;
+		border: 1px solid #ff7424;
+	}
+}
+
+/* 4 Template Components
+----------------------------------------------------------------------------- */
+/* Buttons
+---------------------------------- */
+/* Gray Buttons */
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Light Gray Buttons */
+.btn-light-gray:hover,
+.btn-light-gray:focus,
+.btn-light-gray:active,
+.btn-light-gray.active,
+.open .dropdown-toggle.btn-light-gray {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Default Buttons */
+.btn-default {
+	background-color: #ff7424;
+	color: #fff !important;
+	/* border-color: #ff3a24; */
+}
+
+/* pulsante quando evidenziato! */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default:active:hover,
+.open .dropdown-toggle.btn-default {
+	color: #fff !important;
+	background-color: #f57121; /* arancione più scuro dello standard */
+	border-color: #f57121;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default {
+	background-color: #ff3a24;
+	border-color: #ff3a24;
+}
+
+/* Button with transparent bg
+---------------------------------- */
+.btn-white {
+	background-color: transparent;
+	color: #ff3a24;
+	border: 1px solid #ff7424;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+	color: #fff;
+	background-color: #ff3a24;
+	border-color: #ff3a24;
+}
+
+/* Button background transitions
+---------------------------------- */
+.hvr-sweep-to-right:before,
+.hvr-sweep-to-left:before,
+.hvr-sweep-to-bottom:before,
+.hvr-sweep-to-top:before,
+.hvr-bounce-to-right:before,
+.hvr-bounce-to-left:before,
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before,
+.hvr-radial-out:before,
+.hvr-rectangle-out:before,
+.hvr-shutter-out-horizontal:before,
+.hvr-shutter-out-vertical:before {
+	background: #ff3a24;
+}
+
+/* Forms
+---------------------------------- */
+.default-bg .form-control {
+	border-color: #ff7424;
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	color: #ffffff;
+}
+.default-bg .form-control:focus {
+	border-color: #ff7424;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.default-bg .input-group-addon {
+	background-color: #ff3a24;
+	border-color: #ff7424;
+	color: #fff;
+}
+.dropdown .active>a>.badge,
+.dropdown a:hover .badge,
+.dropdown .open > a > .badge {
+	border-color: #ff7424;
+}
+
+/* Pager
+---------------------------------- */
+ul.pagination li > a:hover {
+	background-color: transparent;
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+ul.pagination li.active a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Tabs
+---------------------------------- */
+.nav-tabs > li.active > a:after {
+	background-color: #ff7424;
+}
+.tab-content:after {
+	background-color: #ff7424;
+}
+@media (max-width:480px) {
+	.nav-tabs > li > a:hover:after {
+		background-color: #ff7424;
+	}
+}
+
+/* Horizontal tabs version 2 */
+.tabs-style-2 .nav-tabs {
+	border-bottom: 1px solid #ff7424;
+}
+.tabs-style-2 .nav-tabs > li.active > a,
+.tabs-style-2 .nav-tabs > li.active > a:hover,
+.tabs-style-2 .nav-tabs > li.active > a:focus,
+.tabs-style-2 .nav-tabs > li > a:hover {
+	border: 1px solid #ff7424;
+	background-color: #ff7424;
+	color: #fff;
+}
+
+/* vertical tabs */
+.vertical .nav-tabs > li > a:hover:after {
+	background-color: #ff7424;
+}
+
+/* Nav pills
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+	border: 1px solid #f3f3f3;
+	color: #ff7424;
+	background-color: #fafafa;
+}
+.nav-pills > li.active > a:after {
+	color: #ff7424;
+}
+.nav-pills > li.active > a:hover:after,
+.nav-pills > li.active > a:focus:after,
+.nav-pills > li > a:hover:after,
+.nav-pills > li > a:focus:after {
+	color: #ff7424;
+}
+.light .footer-content .nav-pills > li.active > a:hover,
+.light .footer-content .nav-pills > li > a:hover {
+	color: #ff3a24;
+}
+.nav-pills > .active > a > .badge {
+	color: #ff7424;
+	background-color: #fff;
+	border-color: #ff7424;	
+}
+
+/* Collapse
+---------------------------------- */
+.panel-heading a {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.panel-heading a:hover,
+.panel-transparent .panel-heading a:hover {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+
+/* Progress bars
+---------------------------------- */
+.progress-bar-default {
+	background-color: #ff7424;
+}
+
+/* Modals
+---------------------------------- */
+.modal-content .modal-header {
+	background-color: #ff7424;
+}
+
+/* Images and Images overlay
+---------------------------------- */
+.overlay a {
+	color: #ff7424;
+	background-color: #ffffff;
+}
+.overlay-links a + a {
+	color: #ffffff;
+	background-color: #ff7424;
+}
+a.overlay i {
+	color: #ff7424;
+}
+
+/* 5 Navigations
+----------------------------------------------------------------------------- */
+/* first level active menu items on hover/focus */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #ff7424;
+	background-color: transparent;
+}
+
+.main-navigation .navbar-nav > .open > a, 
+.main-navigation .navbar-nav > .open > a:hover, 
+.main-navigation .navbar-nav > .open > a:focus { 
+	color: #666666; 
+	background-color: #fafafa; 
+}
+
+/* second level menu items on focus/hover and when opened */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu .menu > .active > a,
+.dropdown-menu .menu > .active > a:hover,
+.dropdown-menu .menu > .active > a:focus {
+	background-color: #ffffff;
+	color: #ff7424;
+	border-color: #f1f1f1;
+}
+#offcanvas .nav .open > a,
+#offcanvas .nav .open > a:hover,
+#offcanvas .nav .open > a:focus,
+#offcanvas .nav > li > a:hover, 
+#offcanvas .nav > li > a:focus,
+#offcanvas .navbar-nav > li.active > a {
+	color: #ff7424;
+	background-color: #ffffff;
+}
+
+/* mega menu menu items on focus/hover and when opened */
+.mega-menu .menu > li > a:hover,
+.mega-menu .menu > li > a:focus {
+	background-color: #ffffff;
+	color: #ff7424;
+	border-color: #f1f1f1;
+}
+
+/* arrows for parent menu items */
+.navbar-default .navbar-nav > .active.dropdown > a:before {
+	color: #ff7424;
+}
+.navbar-default .navbar-nav > .dropdown.open > a:before { 
+	color: #e5e5e5; 
+}
+.dropdown .dropdown.open>a:before,
+.transparent.header:not(.dark) .dropdown .dropdown.open>a:before {
+	color: #ff7424;
+}
+
+/* mobile menu toggle button on hover/focus */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fafafa;
+	border-color: #ff7424;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #ff7424;
+}
+@media (max-width:767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { 
+		color: #ff7424; 
+		background-color: transparent; 
+	}
+	
+	/* first level items hover and focus states */
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #ff7424;
+		background-color: #fff;
+	}
+	
+	/* second level items on hover/focus */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ff7424;
+	}
+}
+
+/* Subfooter navigation
+---------------------------------- */
+.subfooter .navbar-default .nav > li > a:hover,
+.subfooter .navbar-default .nav > .active > a:hover,
+.subfooter .navbar-default .nav > .active > a:focus {
+	background-color: transparent;
+	color: #ff7424;
+}
+
+/* 6 Blocks/Widgets
+----------------------------------------------------------------------------- */
+/* Boxes
+---------------------------------- */
+.box.gray-bg:hover {
+	color: #ff7424;
+}
+.box.default-bg:hover {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box.default-bg:hover * {
+	color: #ff7424;
+}
+.box-style-1:not(.team-member):hover i {
+	color: #ff7424;
+}
+.box-style-1.default-bg:hover i, 
+.box-style-1.dark-bg:hover i {
+	color: inherit;
+}
+.box-style-2:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box-style-2:hover .default-bg * {
+	color: #ff7424;
+}
+.box-style-2:hover .white-bg * {
+	color: #ff7424;
+}
+.box-style-3:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ff7424;
+}
+.box-style-3:hover .default-bg * {
+	color: #ff7424;
+}
+.box-style-3:hover .white-bg * {
+	color: #ff7424;
+}
+
+/* Tags cloud block
+---------------------------------- */
+.tag a:hover {
+	color: #ffffff;
+	background-color: #ff7424;
+	border-color: #ff7424;
+}
+
+/* Social icons block
+---------------------------------- */
+.social-links li a {
+	background: #ff7424;
+	border: 1px solid #ff7424;
+	color: #fff;
+}
+.social-links li a:hover {
+	background-color: transparent;
+	border-color: #ff3a24;
+	color: #ff3a24;
+}
+.social-links .dropdown.open>button>i:before {
+	content: "\f00d";
+	color: #ff7424;
+}
+.header-top .social-links li a:hover {
+	color: #ff3a24;
+}
+
+/* search and login
+---------------------------------- */
+.header-top-dropdown .dropdown.open>button,
+.header-top-dropdown .dropdown>button:hover {
+
+	color: #ff7424;
+}
+
+/* Pricing tables
+---------------------------------- */
+.plan .popover-title {
+	background-color: #ff7424;
+	color: #ffffff;
+}
+.gray .plan .header h3 {
+	color: #ff7424;
+}
+.white .plan .header {
+	color: #fff;
+	background: #ff7424;
+}
+.stripped .header {
+	background: #ff7424;
+	-webkit-box-shadow: 0px 0px 60px #ff3a24 inset;
+	-moz-box-shadow: 0px 0px 60px #ff3a24 inset;
+	box-shadow: 0px 0px 60px #ff3a24 inset;
+	color: #fff;
+}
+
+/* 7 Main Slideshow
+----------------------------------------------------------------------------- */
+/* Slider Revolution captions */
+.default_bg {
+	background-color: #ff7424;
+	color: #fff;
+}
+
+/* Revolution Nav Controls */
+.tparrows.round:hover {
+	color: #ffffff;
+	background-color: #ff7424;
+}
+.tp-bullets.simplebullets.round .bullet:hover,
+.tp-bullets.simplebullets.round .bullet.selected {
+	background-color: #ff7424;
+}
+.tp-bannertimer {
+	background-color: rgba(232,76,61,0.7);
+}
+
+/* 8 Owl carousel
+----------------------------------------------------------------------------- */
+.owl-prev {
+	background-color: #ff7424;
+	color: #f1f1f1;
+}
+.owl-next {
+	background-color: #f1f1f1;
+	color: #ff7424;
+}
+.content-slider-with-controls .owl-buttons div,
+.content-slider-with-controls-autoplay .owl-buttons div {
+	background-color: #ff7424;
+	color: #f1f1f1;
+}
+.content-slider-with-controls .owl-prev:hover,
+.content-slider-with-controls .owl-next:hover,
+.content-slider-with-controls-autoplay .owl-prev:hover,
+.content-slider-with-controls-autoplay .owl-next:hover {
+	background-color: #f1f1f1;
+	color: #ff7424;
+}
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+	background: #ff7424;
+} 
+/**
+ * Common usage
+ */
+
+body {
+    font-family: 'Open Sans', "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+ 
+/* Try to fix webkit autofill background color (does not work) */
+/* TODO: really fix it */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+}
+
+.smooth {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.pointer:hover {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+
+/* Placeholder customization */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #777 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #777 !important;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #777 !important;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #777 !important;
+}
+ 
+.separator.faq:after {
+    width: 80px;
+    height: 5px;
+    background: #888;
+}
+.faq-section {
+    background-color: #ffe0b2; /* colore per il Background della sezione  - #e1bee7 = lilla chiaro */
+    margin-bottom: 40px;
+}
+.faq-icon {
+    background-color: #ff7424 ; /* #ba68c8 = viola chiaro */
+    color: #ffffff;
+}
+.faq-div {
+    border: 0px solid transparent; /*#54bcff; /* nb: senza questo bordo, l'allineamento del link "leggi" non va bene! */ /* colore azzurro: #54bcff */
+}
+.faq-div a {
+    color: #ff7424;
+    text-decoration: none;
+}
+.faq-body { /* corpo della faq, compreso il titolo */
+    min-height: 180px;
+    border: 1px solid transparent;
+}
+.faq-body p {
+    color: #6b686b;
+    margin-bottom: 30px;
+    border: 0px solid #ff7424;
+}
+.bottom-with-margin {
+    position: absolute;
+    bottom: 10px;
+    border: 1px solid transparent;
+}
+/* colore dell'icona, quando si va col mouse sopra Tutta la Sezione della Faq! */
+.box-style-2:hover .faq-icon {
+    background-color: #fff;
+    color: #ff7424;
+    border: 1px solid #ff7424;
+}
+/* colore del link (parola "leggi"), quando si va col mouse sopra Tutta la Sezione della Faq! */
+.box-style-2:hover .link {
+    /* opacity: 0.7; */
+    color: #fff;
+}
+.box-style-2 .body {
+    margin-left: 80px; /* default 80 */
+}
+
+
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 40px;
+        height: 40px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+    .faq-body { /* corpo della faq, compreso il titolo */
+        min-height: 120px;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 40px;
+        height: 40px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+    .faq-body { /* corpo della faq, compreso il titolo */
+        min-height: 120px;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {
+    .box-style-2 .icon-container { /* dimensione riquadro foglia - default: 60x60 */
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; /* margine a destra della foglia */
+        margin-bottom: 20px; /* margine a destra della foglia */
+    }
+    .box-style-2 i { /* dimensione foglia - default: font 36,line-h 60*/
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .box-style-2 .body { /* margine a sinistra del corpo della faq */
+        margin-left: 0px; /* default 80 */
+    }
+}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {}
+ 
+.partner-section {
+    width: 50%;
+    float: left;
+    border: 0px solid #ff7424;
+}
+.partner-logo {
+    margin-right: 3%;
+    margin-bottom: 4%;
+    width: 45%; /* 30% */
+    float: left;
+    opacity: 0.9;
+}
+.partner-logo img {
+    /* height: 100%; */
+}
+.margin-top-little {
+    margin-top: 10px;
+}
+
+.footer a.text-orange {
+    color: #ff7424;
+}
+.footer a {
+    color: #888;
+}
+.footer a:hover,
+.footer a:focus {
+    color: #ff7424;
+}
+
+.subfooter a.text-orange {
+    color: #ff7424;
+}
+.subfooter a {
+    color: #aebcb9;
+}
+.subfooter a:hover,
+.subfooter a:focus {
+    background-color: transparent;
+    color: #ff7424;
+}
+.margin-right-little {
+    margin-right: 12px;
+}
+
+
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .partner-section {
+        width: 90%;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .partner-section {
+        width: 90%;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {}
+ 
+/**
+ * Form customization
+ */
+.form-control {
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+    padding-right: 0 !important;
+}
+
+.form-group {
+    display: inline-block;
+    width: 100%;
+}
+
+/**
+ * See https://www.tjvantoll.com/2012/07/15/native-html5-number-picker-vs-jquery-uis-spinner-which-to-use/
+ */
+
+.select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font:normal 11px/22px Arial, Sans-Serif;
+    color:black;
+    border:1px solid #ccc;
+    min-height: 40px;
+    min-width: 100px;
+}
+
+/* This is for ListControl */
+.styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:0 10px;
+    font-weight:bold;
+}
+.styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border: 5px solid transparent;
+    border-color: black transparent transparent transparent;
+    position:absolute;
+    top:20px;
+    right:6px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.underline {
+    border-bottom: 1px dashed;
+    font-size: 13px;
+}
+
+.btn-radio {
+    margin: 0;
+    min-width: 40px;
+    max-width: 180px;
+}
+
+.btn-group {
+    display: block;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
+.dropdown-toggle.flags {
+    min-width: 20px;
+    margin: 0;
+    width: 100%;
+}
+.dropdown-menu.flags {
+    max-height: 232px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 5;
+}
+.dropdown-menu.flags a {
+    color: #000000;
+    background-color: #cacaca;
+    font-weight: bold;
+}
+.dropdown-menu.flags a:visited {
+    background-color: #cacaca;
+}
+.dropdown-menu.flags a:hover {
+    color: #000000 !important;
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+    background-color: #cacaca;
+}
+.dropdown-menu.flags a:active {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+.dropdown-selected {
+    width: calc(100% - 56px);
+    overflow: hidden;
+    text-overflow: clip;
+}
+.dropdown-open {
+    margin-top: 3px;
+}
+
+.btn-neutral:hover,
+.btn-neutral:focus,
+.btn-neutral:active,
+.btn-neutral.active,
+.open
+.dropdown-toggle.btn-neutral {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+
+.btn-neutral {
+    color: #555 !important;
+    background-color: #cacaca;
+    border-color: #acacac;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.btn-inline {
+    margin: 0;
+    line-height: 0.428571 !important;
+}
+ 
+.header.header-smaller {
+    padding: 0px 0;
+}
+.header-small .logo img {
+    margin: 0;
+}
+.menu-cse {
+    margin-top: 6px;
+}
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px; /* grandezza font del menù */
+}
+.logo-div {
+    height: 75px;
+    float: left;
+    border: 0px solid #40205b;
+}
+.logo-font {
+    margin-left: 10px;
+    /* font-family:"Source Sans Pro", sans-serif; */
+    font-size: 13px;
+    font-style: italic;
+    color: #888;
+    line-height: 25px;
+}
+.logo-font p {
+    margin-top: 0px;
+    /*
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: bottom;
+    */
+}
+.logo-desktop{
+    display: none;
+}
+
+#menuitem-spedisci {
+    cursor: pointer;
+}
+
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    /* logo più piccolo, quando schermo piccolo */
+    .header-small .logo img {
+        margin: 0;
+        height: 55px;
+    }
+    .logo-div {
+        height: 55px;
+    }
+    .logo-font {
+        font-size: 10px;
+        line-height: 19px;
+    }
+}
+
+/* 2) Small/Medium devices (Small Tablets)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {
+    .logo-div-container {
+        width: 25%;
+        float:left;
+    }
+}
+
+/* 3) Small/Medium devices (Small Tablets)  --  769 <= x  */
+@media (min-width:769px)  {
+    .logo-desktop{
+        display: inline;
+    }
+    .logo-smartphone {
+        display: none;
+    }
+}
+
+.banner {
+    background-color: #fff;
+}
+#banner-section {
+    margin-top: 0px;
+    background-image: url('/images/bg_pacchi.jpg');
+    height: 90vh; /* 'vh' è l'unità di misura 'altezza finestra!!' */
+    /* Center and scale the image nicely */
+    background-position: center top; /* così si vedrà sempre la parte alta dell'immagine */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 10px solid #00A8FF; */
+    /* opacity: 0.7; */
+}
+.layer-over-bg {
+    background-color: rgba(55, 55, 55, 0.1); /* velo di grigio sopra lo sfondo */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* right-section: slogan + carousel + button Spedisci */
+.right-section {
+    border: 0px solid #40e85b;
+}
+
+/* right 1: the slogan */
+.r1-slogan {
+    font-family: 'montserrat','proxima-nova','Tahoma';
+    color: #ff7424;
+    border: 0px solid #e8c26f;
+    /* background-color: rgba(55, 55, 55, 0.4); /* velo di grigio sopra lo sfondo */
+}
+#br1 {
+    display:none; /* "a capo" dopo la parola "spedisci" nello slogan */
+}
+
+/* right 2: carousel */
+.r2-carousel {
+    border: 0px solid #e8c26f;
+    /* font-family: 'montserrat','proxima-nova','Tahoma'; */
+    color: #ff7424;
+}
+
+/* right 3: big-button "Spedisci" (Pulsantone) */
+.r3-div-container-big-button {
+    border: 0px solid #e8c26f;
+}
+.r3-div-container-big-button a:hover,
+.r3-div-container-big-button a:focus,
+.r3-div-container-big-button a:active,
+.r3-div-container-big-button a:active:hover {
+    text-decoration: none;
+}
+.r3-div-container-big-button a {
+    cursor: pointer;
+}
+.r3-div-big-button {
+    margin: auto;
+    text-align: center;
+}
+.r3-big-button {
+    padding: 10px 14px;
+    font-family: 'montserrat', 'proxima-nova';
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* ombra per il pulsante */
+    background-color: #ff7424; /* */
+    color: #fff;
+}
+.r3-big-button:hover,
+.r3-big-button:focus,
+.r3-big-button:active,
+.r3-big-button:active:hover {
+    background-color: #f57121; /* */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+.options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #ccc;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.options li {
+    padding: 0 6px;
+    margin: 6px 6px;
+}
+.options li:hover {
+    background-color: #39f;
+    color: white;
+}
+
+ 
+.right {
+    float: right;
+    text-align: right;
+}
+.left {
+    float: left;
+    text-align: left;
+}
+ 
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    .strongp-column {
+        width: 50%;
+    }
+    .page-top i { /* icone */
+        font-size: 40px;
+    }
+    .strongpoint-title {
+        font-size: 16px;
+    }
+    .page-top p {
+        font-size: 13px;
+    }
+}
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .strongp-column {
+        width: 32%;
+    }
+    .page-top i { /* icone */
+        font-size: 50px;
+    }
+    .strongpoint-title {
+        font-size: 18px;
+    }
+    .page-top p {
+        font-size: 14px;
+    }
+}
+/* 3) Medium devices (Tablets and Medium Pc screen)  --  769 <= x < 1025 */
+@media (min-width:769px) and (max-width:1025px) {
+    .strongp-column {
+        width: 33%;
+    }
+    .page-top i { /* icone */
+        font-size: 60px;
+    }
+    .strongpoint-title {
+        font-size: 20px;
+    }
+    .page-top p {
+        font-size: 16px;
+    }
+}
+/* 4) Large devices (Large Pc screen)  --  1025 <= x */
+@media (min-width:1025px) {
+    .strongp-column {
+        width: 20%;
+    }
+    .page-top i { /* icone */
+        font-size: 70px;
+    }
+    .strongpoint-title {
+        font-size: 22px;
+    }
+    .page-top p {
+        font-size: 18px;
+    }
+}
+/* 1) Small devices (Smartphones)  --  x < 481px */
+@media (max-width:481px) {
+    #banner-section {
+        min-height: 600px;
+        background-position: center center; /* così si vedrà sempre la parte alta dell'immagine */
+        background-repeat: no-repeat;
+        background-size: 350%;
+        /* height: 450px; */
+    }
+    /* right-section: slogan + carousel + button Spedisci */
+    .right-section {
+        float: none;
+        margin: auto;
+        min-width: 320px;
+    }
+    .r1-slogan {
+        /* color: #D54055; */
+        font-size: 35px;
+        text-align: center;
+    }
+    .r2-carousel {
+        height: 190px;
+        width: 300px;
+        float: none;
+        clear: right;
+        margin: auto; /* questa istruzione è per centrare il div */
+    }
+    .material-icons.md-big {
+        font-size: 40px;
+    }
+    .slide-text {
+        line-height: 190px;
+        height: 190px;
+        width: 300px;
+        padding: 10px 10px;
+        font-size: 30px; /* dimensione carattere del carosello */
+    }
+    .carousel-dot { /* barrette rettangolari */
+        height: 8px;
+        width: 94px;
+        margin: 0px 0px; /* impostati solo 2 margini: top/bottom, e left/right */
+    }
+    .r3-div-container-big-button {
+        position: relative;
+        top: 10vh;
+        /* width: 400px; */
+    }
+    .r3-big-button {
+        width: 220px;
+        font-size: 35px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+/* 2) Small/Medium devices (Small Tablets)  --  x >= 481  */
+@media (min-width:481px) {
+    #banner-section {
+        min-height: 700px;
+    }
+    .right-section {
+        float: right;
+        position: relative;
+        top: 5vh;
+        right: 5vw;
+        min-width: 700px;
+    }
+    .r1-slogan {
+        text-align: right;
+        /* color: #ff7424; */
+    }
+    .r2-carousel {
+        position: relative;
+        float: right;
+        top: 1vh;
+        height: 250px;
+        width: 400px;
+        font-size: 18px;
+    }
+    .slide-text {
+        font-size: 40px; /* dimensione carattere del carosello */
+    }
+    .r3-div-container-big-button {
+        position: relative;
+        clear: right; /* serve nel caso r2 usi:  float: right !!! */
+        float: right; /* per allinearlo a dx */
+        top: 5vh;
+        width: 400px;
+    }
+    .r3-big-button {
+        width: 255px;
+        font-size: 40px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+/* 3) Medium devices (Tablets and medium pc screen)  --  x >= 769  */
+@media (min-width:769px) {
+    .r1-slogan {
+        /* color: #383fd5; */
+        font-size: 44px;
+    }
+    .slide-text {
+        /* font-size: 50px; /* dimensione carattere del carosello */
+    }
+}
+
+/* 4) Large devices (Large pc screen)  --  x >= 1025  */
+@media (min-width:1025px) {
+    .r1-slogan {
+        /* color: #4fd533; */
+        font-size: 50px;
+    }
+}
+
+/* 5) Large devices (Large pc screen)  --  x >= 1250  */
+@media (min-width:1250px) {
+    .right-section {
+        right: 15vw;
+    }
+    .r1-slogan {
+        /* color: #4fd533; */
+    }
+}
+
+
+/* ** Ridefinizione di elementi per Fasce Particolari ** */
+
+/* 2) Small/Medium devices (Small Tablets)  --  481 <= x < 769 */
+@media (min-width:481px) and (max-width:769px) {
+    .r1-slogan {
+        /* color: #4fd533; */
+        font-size: 50px;
+    }
+    #br1 {
+        display:inline; /* "a capo" dopo la parola "spedisci" nello slogan */
+    }
+}
+ 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+form {
+    margin: 0 !important;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-control {
+    height: 35px /* !important;*/
+}
+.btn {
+    padding: 6px 12px !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.bigspace {
+    padding-top: 53px;
+    padding-bottom: 30px;
+    background-image: url('/images/fullscreen-banner-image.jpg');
+    background-size: 100%;
+    background-position: 0 50%;
+}
+ 
+.ui-state-error {
+    font-size: 13px;
+    margin: 1px;
+}
+.ui-icon {
+    margin-bottom: -1px;
+    margin-left: 4px;
+}
+.ui-input-error {
+    border: solid 1px #ffb73d !important;
+}
+.underline-error {
+    border: solid #ff7424 2px;
+    transition: all 2s;
+}
+ 
+.strongp-column {
+    float:left;
+    /* height: 400px; /* altezza fissa: utile per allineare bene gli strongpoints */
+    border: 0px solid #ba68c8;
+}
+.page-top i { /* icone */
+    color: #ff7424; /* arancio */
+}
+.strongpoint-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+/* paragrafi con le descrizioni degli strongpoint */
+.page-top p {
+    color: #888;
+}
+ 
+.table > thead > tr > th > a {
+    color: #fff;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px !important
+}
+
+.expandable > li > a {
+    display: inline !important;
+    padding: 0 !important;
+}
+ 
+.blank-space-half-page {
+    height: 30vh;
+}
+.left-menu {
+    margin-right: 40px;
+}
+.text-section {
+    width: 70%;
+}
+ 
+#wizard {
+    display: none; /* entrando nella Home il wizard non si deve vedere */
+}
+
+.container.main-wizard {
+    padding: 0 !important;
+}
+.container.wizard {
+    padding: 0 !important;
+    width: 100%;
+}
+.container.wizard > .nav-title {
+    color: #ff7424;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar.wizard {
+    margin-bottom: 0;
+    min-height: 20px;
+    border: none;
+}
+.tab-content.wizard {
+    padding: 0 !important;
+}
+.tab-content.wizard:after {
+    width: 0;
+}
+form > .row {
+    margin: 0;
+}
+.sideways > ul {
+
+}
+.sideways > li > a,
+.sideways > li > a:hover,
+.sideways > li > a:focus {
+    min-height: 41px;
+}
+.wizard .nav-pills > li {
+    display: flex;
+}
+.wizard .nav-pills > li.empty {
+    flex-grow: 100;
+    float: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+.wizard .nav-pills > li > a {
+    border-bottom: 1px solid #f3f3f3;
+}
+.wizard .nav-pills > li + li {
+    margin-left: 0;
+}
+.wizard .nav-pills > li.active > a {
+    border-bottom: none;
+}
+.wizard .nav-pills > li > a:hover {
+    border-bottom: none;
+}
+
+.wizard .nav-pills > li > a {
+    padding: 10px 4px;
+}
+.wizard .navbar-inner span.title {
+    margin-left: 5px;
+}
+.wizard .navbar-inner i.fa {
+    margin-left: 5px;
+    color: #ddd;
+}
+.wizard .navbar-inner .pill,
+.wizard .nav-tabs .pill {
+    border-radius: 50%;
+    background-color: #ddd;
+    width: 20px;
+    float: left;
+    text-align: center;
+    color: white;
+}
+.wizard .navbar-inner .pill.selected,
+.wizard .nav-tabs .active .pill {
+    background-color: #ff3a24;
+}
+.wizard .nav-tabs .command .pill {
+    background-color: #ff7424;
+}
+.wizard .navbar-inner .pill.passed {
+    background-color: #ff7424;
+}
+
+/* Vertical tabs: https://jsfiddle.net/GetUIKit/b3nhjvot/ */
+.tabs-left, .tabs-right {
+    border-bottom: none;
+    padding-top: 2px;
+}
+.tabs-left {
+    border-right: 1px solid #ddd;
+}
+.tabs-right {
+    border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+    float: none;
+    margin-bottom: 2px;
+}
+.tabs-left>li {
+    margin-right: -1px;
+}
+.tabs-right>li {
+    margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+}
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+    border-bottom: 1px solid #ddd;
+    border-left-color: transparent;
+}
+.tabs-left>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display:block;
+}
+.tabs-right>li>a {
+    border-radius: 0 4px 4px 0;
+    margin-right: 0;
+}
+
+/* Accordion customization */
+.panel-heading a {
+    transition: transform 2s;
+}
+.panel-heading a:before {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling FontAwesome */
+    content: "\f078";    /* fa-chevron-down */
+    float: left;
+    width: 25px;
+}
+.panel-heading a:after {
+    /* overwrite default behavior */
+    content: inherit !important;
+}
+.panel-heading a.collapsed:before {
+    /* symbol for "collapsed" panels */
+    content: "\f054";    /* fa-chevron-right */
+}
+.panel-heading a.collapsed:after {
+    /* overwrite default behavior */
+    content: inherit !important;
+}
+.panel-body i {
+    width: initial !important;
+}
+
+@media (max-width: 991px) {
+    .lighten {
+        border-bottom: 1px solid #ff7424;
+        text-align: left;
+    }
+    .text-aligned {
+        margin-top: 12px;
+    }
+}
+@media (min-width: 992px) {
+    .lighten {
+        text-align: right;
+    }
+    .text-aligned {
+        margin-top: 12px;
+        border-left: 1px solid #ff7424;
+    }
+}
+
+@media (max-width: 991px) {
+    .pr-min {
+        padding-right: 10px;
+    }
+}
+@media (min-width:992px) and (max-width: 1199px) {
+    .pr-min {
+        padding-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .pr-min {
+        padding-right: 10px;
+    }
+}
+
+
+ 

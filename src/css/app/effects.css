@@ -1,0 +1,39 @@
+/* Try to fix webkit autofill background color (does not work) */
+/* TODO: really fix it */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .45);
+}
+
+.smooth {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.pointer:hover {
+    opacity: 0.7; /* css standard */
+    filter: alpha(opacity=70); /* internet explorer */
+}
+
+/* Placeholder customization */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #777 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #777 !important;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #777 !important;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #777 !important;
+}

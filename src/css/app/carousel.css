@@ -1,0 +1,65 @@
+/* Slideshow container */
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* background-color: #bb459d; */
+}
+.carousel-slide {display:none}
+/*
+.carousel-container img {
+    height: 220px;
+    width: 400px;
+}
+*/
+/* Caption text */
+.slide-text {
+    line-height: 220px;
+    height: 220px;
+    width: 400px;
+    padding: 12px 12px;
+    font-family: "Open Sans", Gabriola;
+    /* font-weight: bold; */
+    text-align: center;
+    /* color: #248; */
+}
+.slide-text p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+.material-icons.md-big { font-size: 55px; }
+.glyphicon-size { font-size: 28px; }
+
+.align-center {
+    text-align: center;
+}
+/* The dots/bullets/indicators */
+.carousel-dot { /* barrette rettangolari */
+    height: 8px;
+    width: 125px;
+    margin: 0px 0px; /* impostati solo 2 margini: top/bottom, e left/right */
+    background-color: #ff7424;
+    opacity: 0.3;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-dot {
+    background-color: #ff7424;
+    opacity: 0.8;
+}
+/* Fading animation */
+.slide-eff {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.6s;
+    animation-name: fade;
+    animation-duration: 0.6s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
